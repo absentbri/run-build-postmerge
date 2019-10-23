@@ -10,10 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "run-build-postmerge": "bin/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/imsdev/node-autobuild.git"
-  },
   "keywords": [
     "autobuild",
     "run-build-postmerge"
@@ -26,5 +22,13 @@
   },
   "author": "Brian Ramsey",
   "license": "MIT",
-  "homepage": "https://github.com/absentbri/run-build-postmerge"
+  "homepage": "https://github.com/absentbri/run-build-postmerge",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:absentbri/run-build-postmerge.git"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }

@@ -1,9 +1,9 @@
 const findChangedFiles = require('./lib/git');
 const run = require('./lib/run');
-const params = require('./lib/params');
+const paths = ['/src'];
 
 async function runBuildPostMerge(_options = {}) {
-  const options = Object.assign({}, { query }, _options);
+  const options = Object.assign({}, { paths }, _options);
   const files = await findChangedFiles();
   const foundTargets = [];
 
