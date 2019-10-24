@@ -1,18 +1,21 @@
 {
   "name": "run-build-postmerge",
-  "version": "1.0.0",
+  "version": "1.0.0a",
   "description": "Automated post-merge builder for husky",
   "main": "index.js",
   "bin": {
-    "run-build-postmerge": "bin/index.js"
+    "run-build-postmerge": "./lib/bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run-build-postmerge": "bin/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "build",
     "autobuild",
-    "run-build-postmerge"
+    "run-build-postmerge",
+    "npm",
+    "husky",
+    "git hooks"
   ],
   "dependencies": {
     "cosmiconfig": "^5.2.1",
@@ -20,15 +23,19 @@
     "read-pkg": "^5.2.0",
     "yarn-or-npm": "^2.0.4"
   },
-  "author": "Brian Ramsey",
+  "author": "Brian Ramsey <no.disclaimers@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/absentbri/run-build-postmerge",
+  "homepage": "https://github.com/absentbri/run-build-postmerge#readme",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:absentbri/run-build-postmerge.git"
   },
-  "directories": {
-    "lib": "lib"
+  "bugs": {
+    "url": "https://github.com/absentbri/run-build-postmerge/issues"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "devDependencies": {}
 }
