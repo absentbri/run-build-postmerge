@@ -6,13 +6,14 @@ const getConfig = require('./lib/config');
 
 async function runBuildPostMerge(_options = {}) {
   const cwd = getCWD();
-  const pkg = getPackage(cwd);
   const config = getConfig(cwd);
 
   const options = Object.assign({}, config, _options);
   const files = await findChangedFiles();
   const foundTargets = [];
 
+  console.log(config);
+  console.log(files);
   files.forEach(file => {
     options.paths.forEach(path => {
       if(file.indexOf(path) > -1){
@@ -30,7 +31,7 @@ async function runBuildPostMerge(_options = {}) {
 }
 
 function getCWD() {
-  return path.resolve(scriptPath.split('node_modules')[0]);
+  return path.dirname(__filename.split('node_modules')[0])
 }
 
 

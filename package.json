@@ -1,6 +1,6 @@
 {
   "name": "run-build-postmerge",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Automated post-merge builder for husky",
   "main": "index.js",
   "bin": {
