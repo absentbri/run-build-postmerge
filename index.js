@@ -12,8 +12,6 @@ async function runBuildPostMerge(_options = {}) {
   const files = await findChangedFiles();
   const foundTargets = [];
 
-  console.log(config);
-  console.log(files);
   files.forEach(file => {
     options.paths.forEach(path => {
       if(file.indexOf(path) > -1){
